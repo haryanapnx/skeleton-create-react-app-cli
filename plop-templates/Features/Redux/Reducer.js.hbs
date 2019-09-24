@@ -1,0 +1,28 @@
+import * as constants from './{{pascalCase name}}Constants'
+
+const initialState = {
+  {{pascalCase name}}: [],
+  isLoading: false,
+}
+
+export default (state = initialState, action) => {
+  switch (action.type) {
+    case constants.{{constantCase name}}_GET:
+      return { 
+        ...state, 
+        {{pascalCase name}}: action.payload.{{pascalCase name}} 
+      }
+    case constants.{{constantCase name}}_SET:
+      return { 
+        ...state, 
+        {{pascalCase name}}: action.payload.{{pascalCase name}} 
+      }
+    case constants.{{constantCase name}}_LOADING:
+      return { 
+        ...state, 
+        isLoading: action.bool 
+      }
+    default:
+      return state
+  }
+}

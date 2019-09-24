@@ -1,0 +1,24 @@
+import * as constants from './{{pascalCase name}}Constants'
+
+export function setLoading(bool){
+    return{
+        type:constants.{{constantCase name}}_LOADING,
+        bool
+    }
+}
+
+export const get{{pascalCase name}} = async dispatch => {
+
+   dispatch(setLoading(true))
+
+   //some function
+   
+}
+
+export const post{{pascalCase name}} = async dispatch => {
+
+   dispatch(setLoading(true))
+
+   //some function
+   
+}

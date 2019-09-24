@@ -1,7 +1,9 @@
 import React, {useEffect, useState} from 'react';
 import logo from './logo.svg';
 import './App.css';
-// import {isEmpty} from 'utils'
+import {isEmpty} from 'utils/'
+import Footer from 'components/header';
+import {error_message} from 'commons/toastify'
 
 const App =()=> {
 
@@ -9,6 +11,7 @@ const [name, setName] = useState(false);
 
   useEffect(()=>{
     console.log('sini');
+    error_message('coba error')
   })
 
   const changeName =()=>{
@@ -23,7 +26,7 @@ const [name, setName] = useState(false);
           Edit <code>{name}</code> and save to reload.
         </p>
         <button onClick={changeName}>click</button>
-        {(name) && (
+        {!isEmpty(name) && (
           <a
             className="App-link"
             href="https://reactjs.org"
@@ -34,6 +37,7 @@ const [name, setName] = useState(false);
           </a>
         )}
       </header>
+      <Footer version={'456.10'} />
     </div>
   );
 }
