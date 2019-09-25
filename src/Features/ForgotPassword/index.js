@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
-import './Home.css'
+import './ForgotPassword.css'
 
 class Index extends Component {
    render() {
       return (
-         <div className='Home'>
-            Home
+         <div>
+            ForgotPassword
          </div>
       );
    }

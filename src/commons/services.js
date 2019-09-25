@@ -1,7 +1,7 @@
 import axios from "axios";
 import { error_message } from "./toastify";
-import {URL, SECRET_KEY} from './baseUrl'
-import {refreshToken} from '../redux/actions/authAction'
+import {URL, SECRET_KEY} from './config'
+import {getRefreshToken} from './authCookies'
 import {isEmpty} from 'utils'
 
 const appHeaderProperties = { "secret-key":SECRET_KEY };
@@ -37,8 +37,6 @@ export const apiCall = ({ method, url, data = "" }) => async (dispatch) => {
 					error_message(data.detail);
 				} else {
 					if(data.code === 'token_not_valid' || data.status === 401){
-						let getToken =localStorage.getItem('refresh')
-						let token = JSON.parse(getToken)
 						error_message('Sesi telah berakhir, mohon refresh halaman ini atau login kembali')
 						// refreshToken(token)
 					}else{

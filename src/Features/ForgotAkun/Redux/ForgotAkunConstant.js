@@ -1,0 +1,5 @@
+export const FORGOT_AKUN_GET = 'FORGOT_AKUN_GET';
+
+export const FORGOT_AKUN_SET = 'FORGOT_AKUN_SET';
+
+export const FORGOT_AKUN_LOADING = 'FORGOT_AKUN_LOADING';
