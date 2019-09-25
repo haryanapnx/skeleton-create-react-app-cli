@@ -1,7 +1,19 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+**Feature skeleton-create-react-app-cli**
+* Create new component or feature generate using CLI 
+* Dynamic Spliting Code
+* Styling with SCSS
+* Absolute path
+* State Management using Redux, Redux-Thunk and Redux-Persist
+* Suport React Hooks
 
-## Available Scripts
+## Kick start the project
+  * After clone this project, run `npm install` or `yarn install` in project root
+  * Start the development server with `npm start`
 
+## Generate new Feature/Component using CLI
+  * You can generate component, run `npm run generate features [your feature name]`
+  * successfully created your [your feature name], you can see on folder features 
+  
 In the project directory, you can run:
 
 ### `npm start`
