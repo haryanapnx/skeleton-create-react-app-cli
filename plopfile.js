@@ -80,13 +80,13 @@ module.exports = plop => {
          {
            type: 'append',
            path: 'src/Features/index.js',
-           pattern: `/* PLOP_INJECT_IMPORT */`,
+           pattern: `/* FEATURES_INJECT_IMPORT */`,
            template: `const {{pascalCase name}} = loadable(() => import('./{{pascalCase name}}'));`,
          },
          {
            type: 'append',
            path: 'src/Features/index.js',
-           pattern: `/* PLOP_INJECT_EXPORT */`,
+           pattern: `/* FEATURES_INJECT_EXPORT */`,
            template: `\t{{pascalCase name}},`,
          },
          {
@@ -98,13 +98,13 @@ module.exports = plop => {
          {
            type: 'append',
            path: 'src/commons/routeReducers.js',
-           pattern: `/* PLOP_INJECT_IMPORT */`,
+           pattern: `/* ROUTE_INJECT_IMPORT */`,
            template: `import {{pascalCase name}}Reducer from 'Features/{{pascalCase name}}/Redux/{{pascalCase name}}Reducer';`,
          },
          {
            type: 'append',
            path: 'src/commons/routeReducers.js',
-           pattern: `/* PLOP_INJECT_EXPORT */`,
+           pattern: `/* ROUTE_INJECT_EXPORT */`,
            template: `\t{{pascalCase name}}:{{pascalCase name}}Reducer,`,
          },
          {
@@ -116,7 +116,7 @@ module.exports = plop => {
          {
            type: 'append',
            path: 'src/routes/index.js',
-           pattern: `/* PLOP_INJECT_IMPORT */`,
+           pattern: `/* ROUTE_INJECT_IMPORT */`,
            template: `{{pascalCase name}},`,
          },
        ]

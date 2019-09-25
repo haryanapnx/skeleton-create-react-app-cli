@@ -4,7 +4,7 @@ import './Home.css'
 class Index extends Component {
    render() {
       return (
-         <div className='Home'>
+         <div>
             Home
          </div>
       );
