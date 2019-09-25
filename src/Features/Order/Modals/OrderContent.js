@@ -1,6 +1,6 @@
 import React from 'react';
 
-const HomeContent =({ token, isOpen, toggle }) => {
+const OrderContent =({ token, isOpen, toggle }) => {
    return (
       <div>
          Content Modal
@@ -8,4 +8,4 @@ const HomeContent =({ token, isOpen, toggle }) => {
    );
 }
 
-export default HomeContent;
+export default OrderContent;

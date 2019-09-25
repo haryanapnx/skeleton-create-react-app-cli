@@ -1,13 +1,13 @@
-import * as constants from './AuthConstant'
+import * as constants from './OrderConstant'
 
 export function setLoading(bool){
     return{
-        type:constants.AUTH_LOADING,
+        type:constants.ORDER_LOADING,
         bool
     }
 }
 
-export const getAuth = async dispatch => {
+export const getOrder = async dispatch => {
 
    dispatch(setLoading(true))
 
@@ -15,7 +15,7 @@ export const getAuth = async dispatch => {
    
 }
 
-export const postAuth = async dispatch => {
+export const postOrder = async dispatch => {
 
    dispatch(setLoading(true))
 

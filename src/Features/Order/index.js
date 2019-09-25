@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
-import './Auth'
+import './Order.css'
 
 class Index extends Component {
    render() {
       return (
          <div>
-            
+            Order
          </div>
       );
    }

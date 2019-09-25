@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
 
-class AuthModal extends Component {
+class Order extends Component {
    render() {
       return (
          <div>
-            
+            Order
          </div>
       );
    }
 }
 
-export default AuthModal;
+export default Order;

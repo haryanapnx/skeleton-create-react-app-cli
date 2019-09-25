@@ -1,9 +1,9 @@
 import React from 'react';
 import { Modal, ModalHeader, ModalBody } from 'reactstrap';
-import {{pascalCase name}}Content from './{{pascalCase name}}Content'
+import OrderContent from './OrderContent'
 
 
-class {{pascalCase name}}Modal extends React.Component {
+class OrderModal extends React.Component {
 
    toggle = () => { this.props.modalToggleReset() }
 
@@ -12,9 +12,9 @@ class {{pascalCase name}}Modal extends React.Component {
       return (
          <div>
          <Modal isOpen={isOpen} toggle={this.toggle} backdrop>
-            <ModalHeader toggle={this.toggle}>{{pascalCase name}}</ModalHeader>
+            <ModalHeader toggle={this.toggle}>Order</ModalHeader>
             <ModalBody>
-               <{{pascalCase name}}Content data={data} token={token} toggle={this.toggle} />
+               <OrderContent data={data} token={token} toggle={this.toggle} />
             </ModalBody>  
          </Modal>
          </div>
@@ -22,4 +22,4 @@ class {{pascalCase name}}Modal extends React.Component {
    }
 }
 
-export default {{pascalCase name}}Modal;
+export default OrderModal;

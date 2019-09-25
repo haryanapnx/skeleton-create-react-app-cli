@@ -1,23 +1,23 @@
-import * as constants from './AuthConstant'
+import * as constants from './OrderConstant'
 
 const initialState = {
-  Auth: [],
+  Order: [],
   isLoading: false,
 }
 
 export default (state = initialState, action) => {
   switch (action.type) {
-    case constants.AUTH_GET:
+    case constants.ORDER_GET:
       return { 
         ...state, 
-        Auth: action.payload.Auth 
+        Order: action.payload.Order 
       }
-    case constants.AUTH_SET:
+    case constants.ORDER_SET:
       return { 
         ...state, 
-        Auth: action.payload.Auth 
+        Order: action.payload.Order 
       }
-    case constants.AUTH_LOADING:
+    case constants.ORDER_LOADING:
       return { 
         ...state, 
         isLoading: action.bool 

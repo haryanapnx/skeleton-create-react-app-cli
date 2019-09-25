@@ -15,7 +15,7 @@ import { persistStore, persistReducer } from "redux-persist";
 
 import reducer from "commons/routeReducers";
 import storage from "redux-persist/lib/storage";
-// import IndexRouter from "./routes/index";
+import IndexRouter from "routes/index";
 // import DetectOffline from "./components/detectOffline";
 
 import './index.css';
@@ -37,10 +37,9 @@ const App = () => (
                    {/* <DetectOffline /> */}
                    <ToastContainer autoClose={8000} />
                    <PersistGate loading={null} persistor={persistor}>
-                       {/* <Router history={history}>
+                       <Router history={history}>
                            <IndexRouter />
-                       </Router> */}
-                       <Apps />
+                       </Router>
                    </PersistGate>
                </>
            </Provider>

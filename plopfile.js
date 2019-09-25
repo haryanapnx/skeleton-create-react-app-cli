@@ -61,7 +61,7 @@ module.exports = plop => {
        },
        {
          type: 'add',
-         path: 'src/Features/{{pascalCase name}}/Index.js',
+         path: 'src/Features/{{pascalCase name}}/index.js',
          templateFile: 'plop-templates/Features/index.js.hbs',
        },
        {
@@ -74,7 +74,7 @@ module.exports = plop => {
          type: 'append',
          path: 'src/Features/index.js',
          pattern: `/* PLOP_INJECT_IMPORT */`,
-         template: `import {{pascalCase name}} from './{{pascalCase name}}';`,
+         template: `const {{pascalCase name}} = loadable(() => import('./{{pascalCase name}}'));`,
        },
        {
          type: 'append',

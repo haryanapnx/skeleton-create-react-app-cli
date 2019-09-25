@@ -1,12 +1,12 @@
 import React, { useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux'
 
-const {{pascalCase name}}Container = () => {
+const OrderContainer = () => {
    const dispatch = useDispatch()
 
    useEffect(() => {
     //some function get from API
-    //ex dispatch(get{{pascalCase name}}())
+    //ex dispatch(getOrder())
   }, [])
 
    return (
@@ -16,4 +16,4 @@ const {{pascalCase name}}Container = () => {
    );
 }
 
-export default {{pascalCase name}}Container;
+export default OrderContainer;
