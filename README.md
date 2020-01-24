@@ -6,13 +6,13 @@
 * State Management using Redux, Redux-Thunk and Redux-Persist
 * Suport React Hooks
 
-## Kick start the project
-  * After clone this project, run `npm install` or `yarn install` in project root
-  * Start the development server with `npm start`
-
 ## Generate new Feature/Component using CLI
-  * You can generate component, run `npm run generate features [your_feature_name]`
-  * successfully created your [your_feature_name], you can see on folder features 
+  * You can generate component, <br>run `npm run generate features [your_feature_name]`
+  * successfully created your `[your_feature_name]`, you can see on folder features 
+
+## Kick start the project
+  * Clone this project repository, copy this command `git clone https://github.com/haryanapnx/skeleton-create-react-app-cli.git`  on your terminal.
+  * Run `npm install` or `yarn install` in project root
   
 In the project directory, you can run:
 
@@ -23,11 +23,6 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 The page will reload if you make edits.<br>
 You will also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
 ### `npm run build`
 
